@@ -2,6 +2,9 @@ module.exports = {
   "extends": [
     "airbnb"
   ],
+  "plugins": [
+    "react-hooks"
+  ],
   "parser": "babel-eslint",
   "env": {
     "jest": true,
@@ -13,10 +16,7 @@ module.exports = {
     "react/forbid-prop-types": "off",
     "no-confusing-arrow": ["off"],
     "padded-blocks": ["error", { "classes": "always" }],
-    "padding-line-between-statements": [
-      "error",
-      { blankLine: "always", prev: "*", next: "return" }
-    ],
+    "padding-line-between-statements": [ "error", { blankLine: "always", prev: "*", next: "return" } ],
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-noninteractive-element-interactions": "off",
     "jsx-a11y/anchor-is-valid": "off",
@@ -39,7 +39,9 @@ module.exports = {
     "react/prop-types": "off",
     "radix": "off",
     "react/state-in-constructor": "off",
-    "camelcase": "off"
+    "camelcase": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "settings": {
     "import/resolver": "webpack"
