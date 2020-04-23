@@ -1,9 +1,10 @@
 import React from 'react'
+import { Content } from 'components/commons.styled'
 
 const Home = () => (
-  <div>
+  <Content>
     <p>This is a boilerplate for react projects!</p>
-  </div>
+  </Content>
 )
 
 
